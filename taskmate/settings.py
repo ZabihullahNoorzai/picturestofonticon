@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'taskmate.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': env("DJANGO_DB_ENGINE"),
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': env("DJANGO_DB_NAME"),
         'USER': env("DJANGO_DB_USER"),
-        'PASSWORD':"",
+        'PASSWORD':env("DJANGO_DB_PASSWORD"),
         'HOST': env("DJANGO_DB_HOST"),
         'PORT': env("DJANGO_DB_PORT"),
     }
