@@ -18,7 +18,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 DEBUG = env("DJANGO_DEBUG")
 
 ALLOWED_HOSTS = [ '127.0.0.1', 'pictofonticon.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['https://pictofonticon.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['http://pictofonticon.up.railway.app/']
 
 # Application definition
 
